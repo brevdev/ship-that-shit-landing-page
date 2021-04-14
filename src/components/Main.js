@@ -61,6 +61,13 @@ const Main = () => {
           <>
             <Padded>
               <h3>Join 3 no-bs events to help you ship that shit.</h3>
+              <button onClick={()=>{
+                window.open(
+                  'https://groups.joinglimpse.com/invite?groupInviteKey=7f6bd64493',
+                  '_blank'
+                );
+              }}>Join Now</button>
+
             </Padded>
             <Padded>
               <AlignedRow style={{ justifyContent: "center", alignItems: "flex-start" }}>
