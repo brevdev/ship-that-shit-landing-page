@@ -48,6 +48,8 @@ const Button = styled.button`
   font-size: 26px;
   color: #ea3635;
   background-color: #ead565;
+  box-shadow: 6px -4px 0px 3px rgb(17 17 17);
+  cursor: pointer;
 `
 
 const Main = () => {
@@ -63,9 +65,21 @@ const Main = () => {
     <OuterContainer>
       <Container>
         <AlignedRow>
-          <Ship />
-          <That />
-          <Shit />
+          <Ship style={{
+            transform: "translateX(27%)",
+            width:"100%"
+          }} />
+          <That style={{ width: "60%", zIndex: "3"}}
+            className={"rotate"}
+          
+          />
+          <Shit style={{
+            transform: "translateX(-27%)",
+            width: "100%"
+          }}/>
+        </AlignedRow>
+        <AlignedRow>
+          
         </AlignedRow>
 
         {animationComplete && (
