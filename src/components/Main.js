@@ -39,6 +39,17 @@ const EventCard = styled.div`
   max-width: 29%;
 `
 
+const Button = styled.button`
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 26px;
+  color: #ea3635;
+  background-color: #ead565;
+`
+
 const Main = () => {
   const [animationComplete, setAnimationComplete] = useState(false)
 
@@ -61,12 +72,12 @@ const Main = () => {
           <>
             <Padded>
               <h3>Join 3 no-bs events to help you ship that shit.</h3>
-              <button onClick={()=>{
+              <Button onClick={()=>{
                 window.open(
                   'https://groups.joinglimpse.com/invite?groupInviteKey=7f6bd64493',
                   '_blank'
                 );
-              }}>Join Now</button>
+              }}>Join Now</Button>
 
             </Padded>
             <Padded>
