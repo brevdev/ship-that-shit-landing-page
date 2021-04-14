@@ -1,12 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Julia Doe`,
-    subtitle: `software developer`,
-    description: `A minimal blog starter built with Gatsbyjs. The needed Gatsby files are included.`,
-    author: `@niklasmtj`,
+    title: `Ship That Shit`,
+    subtitle: `3 no-bs events to 🚢 that 💩`,
+    description: `3 no-bs events to 🚢 that 💩.`,
+    author: `@naderlikeladder`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/
+        }
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
