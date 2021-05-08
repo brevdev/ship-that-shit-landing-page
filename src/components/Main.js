@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import styled from "@emotion/styled"
-
+import {Grid} from "@material-ui/core"; 
 import ShipThatShit from "../images/svg/ship-that-sht.inline.svg"
 import Ship from "../images/svg/ship.inline.svg"
 import That from "../images/svg/that.inline.svg"
@@ -34,22 +34,20 @@ const OuterContainer = styled.div`
   min-height: 78vh;
 `
 
-const EventCard = styled.div`
-  border-radius: 10px;
-  max-width: 29%;
-`
-
 const Button = styled.button`
   border: none;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 30px;
   font-style: italic;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 42px;
   color: #ea3635;
+  color: #303030;
   background-color: #ead565;
   box-shadow: 6px -4px 0px 3px rgb(17 17 17);
   cursor: pointer;
+  font-family: "Selfie" !important;
+  min-width: 30%;
 `
 
 const Main = () => {
@@ -85,7 +83,7 @@ const Main = () => {
         {animationComplete && (
           <>
             <Padded>
-              <h3>Join 3 no-bs events to help you ship that shit.</h3>
+              <h1>Join 3 no-bs events to help you ship that shit.</h1>
               <Button onClick={()=>{
                 window.open(
                   'https://groups.joinglimpse.com/invite?groupInviteKey=7f6bd64493',
@@ -95,29 +93,29 @@ const Main = () => {
 
             </Padded>
             <Padded>
-              <AlignedRow style={{ justifyContent: "center", alignItems: "flex-start" }}>
-                <EventCard>
+                <Grid container direction={"row"} justifyContent="center" alignItems="flex-start">
+                <Grid item xs={12} sm={4}>
                   <div style={{}}>
-                    <h4>Design Office Hours</h4>
+                    <h4>Design Office Hours 🎨</h4>
                     <p>
                       Stop neglecting your design and come ask a designer for
                       some feedback. No strings attached, open office hour to
                       make sure your 🚢 is 🔥
                     </p>
                   </div>
-                </EventCard>
-                <EventCard>
+                </Grid>
+                <Grid item xs={12} sm={4}>
                   <div style={{}}>
-                    <h4>1-liner practice with YC Founders</h4>
+                    <h4>1-liner practice with YC Founders 💬</h4>
                     <p>
                       Practice your 1-liner. Learning how to say what you do concisely by practicing. This "founder speed dating" will
                       pair you with other founders for 2 min, just long enough for 1-liners.
                     </p>
                   </div>
-                </EventCard>
-                <EventCard>
+                </Grid>
+                <Grid item xs={12} sm={4}>
                   <div style={{}}>
-                    <h4>Technical Office Hours</h4>
+                    <h4>Technical Office Hours 💾</h4>
                     <p>
                       Run your technical design by the{" "}
                       <a
@@ -130,8 +128,16 @@ const Main = () => {
                       CTO before you build it. Feel free to ask anything!
                     </p>
                   </div>
-                </EventCard>
-              </AlignedRow>
+                </Grid>
+                <Grid item xs={12}>
+                <Button onClick={()=>{
+                window.open(
+                  'https://groups.joinglimpse.com/invite?groupInviteKey=7f6bd64493',
+                  '_blank'
+                );
+              }} className={"notMobile"}>Join Now</Button>
+                </Grid>
+                </Grid>
             </Padded>
           </>
         )}

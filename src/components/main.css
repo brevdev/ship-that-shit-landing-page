@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Main";
+  src: url("../fonts/cooper-black-webfont.woff");
+}
+@font-face {
+  font-family: "Main2";
+  src: url("../fonts/ITCAvantGardeStd-Bk.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Selfie";
+  src: url("../fonts/Selfie_Black.otf") format("truetype");
+}
+
+.cursive {
+  font-family: "Selfie" !important;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: "Main", sans-serif !important;
+}
+html, body {
+  font-family: "Main2" !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .notMobile {
+    display: none;
+  }
+}
+
 @keyframes dropIn {
     from {
         transform: translateY(-1000px);

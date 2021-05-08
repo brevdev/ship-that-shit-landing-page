@@ -45,7 +45,7 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <Content>
           <main>{children}</main>
-          <Footer>
+          <Footer style={{marginTop: "25px"}}>
             <p>
             © {new Date().getFullYear()}, 💩 🚢-ed with 
             {` `}
