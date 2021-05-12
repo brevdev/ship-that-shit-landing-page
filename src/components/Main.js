@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import styled from "@emotion/styled"
-import {Grid} from "@material-ui/core"; 
+import { Grid } from "@material-ui/core"
 import ShipThatShit from "../images/svg/ship-that-sht.inline.svg"
 import Ship from "../images/svg/ship.inline.svg"
 import That from "../images/svg/that.inline.svg"
@@ -63,38 +63,45 @@ const Main = () => {
     <OuterContainer>
       <Container>
         <AlignedRow>
-          <Ship style={{
-            transform: "translateX(27%)",
-            width:"100%"
-          }} />
-          <That style={{ width: "60%", zIndex: "3"}}
-            className={"rotate"}
-          
+          <Ship
+            style={{
+              transform: "translateX(27%)",
+              width: "100%",
+            }}
           />
-          <Shit style={{
-            transform: "translateX(-27%)",
-            width: "100%"
-          }}/>
+          <That style={{ width: "60%", zIndex: "3" }} className={"rotate"} />
+          <Shit
+            style={{
+              transform: "translateX(-27%)",
+              width: "100%",
+            }}
+          />
         </AlignedRow>
-        <AlignedRow>
-          
-        </AlignedRow>
+        <AlignedRow></AlignedRow>
 
         {animationComplete && (
           <>
             <Padded>
               <h1>Join 3 no-bs events to help you ship that shit.</h1>
-              <Button onClick={()=>{
-                window.open(
-                  'https://groups.joinglimpse.com/invite?groupInviteKey=7f6bd64493',
-                  '_blank'
-                );
-              }}>Join Now</Button>
-
+              <Button
+                onClick={() => {
+                  window.open(
+                    "https://groups.joinglimpse.com/invite?groupInviteKey=7f6bd64493",
+                    "_blank"
+                  )
+                }}
+              >
+                Join Now
+              </Button>
             </Padded>
             <Padded>
-                <Grid container direction={"row"} justifyContent="center" alignItems="flex-start">
-                <Grid item xs={12} sm={4}>
+              <Grid
+                container
+                direction={"row"}
+                justify="space-evenly"
+                alignItems="flex-start"
+              >
+                <Grid item xs={12} sm={3}>
                   <div style={{}}>
                     <h4>Design Office Hours 🎨</h4>
                     <p>
@@ -104,16 +111,18 @@ const Main = () => {
                     </p>
                   </div>
                 </Grid>
-                <Grid item xs={12} sm={4}>
+                <Grid item xs={12} sm={3}>
                   <div style={{}}>
                     <h4>1-liner practice with YC Founders 💬</h4>
                     <p>
-                      Practice your 1-liner. Learning how to say what you do concisely by practicing. This "founder speed dating" will
-                      pair you with other founders for 2 min, just long enough for 1-liners.
+                      Practice your 1-liner. Learning how to say what you do
+                      concisely by practicing. This "founder speed dating" will
+                      pair you with other founders for 2 min, just long enough
+                      for 1-liners.
                     </p>
                   </div>
                 </Grid>
-                <Grid item xs={12} sm={4}>
+                <Grid item xs={12} sm={3}>
                   <div style={{}}>
                     <h4>Technical Office Hours 💾</h4>
                     <p>
@@ -130,14 +139,19 @@ const Main = () => {
                   </div>
                 </Grid>
                 <Grid item xs={12}>
-                <Button onClick={()=>{
-                window.open(
-                  'https://groups.joinglimpse.com/invite?groupInviteKey=7f6bd64493',
-                  '_blank'
-                );
-              }} className={"notMobile"}>Join Now</Button>
+                  <Button
+                    onClick={() => {
+                      window.open(
+                        "https://groups.joinglimpse.com/invite?groupInviteKey=7f6bd64493",
+                        "_blank"
+                      )
+                    }}
+                    className={"notMobile"}
+                  >
+                    Join Now
+                  </Button>
                 </Grid>
-                </Grid>
+              </Grid>
             </Padded>
           </>
         )}

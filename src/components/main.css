@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Main";
-  src: url("../fonts/cooper-black-webfont.woff");
+  src: url("../fonts/CooperMdBTMedium.ttf") format("truetype");
 }
 @font-face {
   font-family: "Main2";
@@ -15,10 +15,15 @@
   font-family: "Selfie" !important;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Main", sans-serif !important;
 }
-html, body {
+html,
+body {
   font-family: "Main2" !important;
 }
 
@@ -29,13 +34,13 @@ html, body {
 }
 
 @keyframes dropIn {
-    from {
-        transform: translateY(-1000px);
-      }
-    
-      to {
-        transform: translateY(0);
-      }
+  from {
+    transform: translateY(-1000px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 @keyframes rotate {
   from {
