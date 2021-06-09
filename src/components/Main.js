@@ -142,7 +142,7 @@ const Main = () => {
                   <Button
                     onClick={() => {
                       window.open(
-                        "https://groups.joinglimpse.com/invite?groupInviteKey=972dd1d51e",
+                        "https://groups.joinglimpse.com/invite?groupInviteKey=4bdbf7ed0b",
                         "_blank"
                       )
                     }}
