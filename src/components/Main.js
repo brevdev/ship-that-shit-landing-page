@@ -139,7 +139,7 @@ const Main = () => {
                   </div>
                 </Grid>
                 <Grid item xs={12}>
-                  <Button
+                  {/* <Button
                     onClick={() => {
                       window.open(
                         "https://groups.joinglimpse.com/invite?groupInviteKey=4bdbf7ed0b",
@@ -149,7 +149,7 @@ const Main = () => {
                     className={"notMobile"}
                   >
                     Join Now
-                  </Button>
+                  </Button> */}
                 </Grid>
               </Grid>
             </Padded>
