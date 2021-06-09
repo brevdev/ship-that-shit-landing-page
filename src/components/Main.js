@@ -134,7 +134,7 @@ const Main = () => {
                       >
                         brev.dev
                       </a>{" "}
-                      CTO before you build it. Feel free to ask anything!
+                      technical team before you build it. Feel free to ask anything!
                     </p>
                   </div>
                 </Grid>
@@ -142,7 +142,7 @@ const Main = () => {
                   <Button
                     onClick={() => {
                       window.open(
-                        "https://groups.joinglimpse.com/invite?groupInviteKey=7f6bd64493",
+                        "https://groups.joinglimpse.com/invite?groupInviteKey=972dd1d51e",
                         "_blank"
                       )
                     }}
