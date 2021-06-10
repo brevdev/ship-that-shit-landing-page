@@ -86,7 +86,7 @@ const Main = () => {
               <Button
                 onClick={() => {
                   window.open(
-                    "https://discord.gg/xPedXcFU",
+                    "https://discord.gg/mpHbuugjtK",
                     "_blank"
                   )
                 }}
@@ -142,7 +142,7 @@ const Main = () => {
                   <Button
                     onClick={() => {
                       window.open(
-                        "https://discord.gg/xPedXcFU",
+                        "https://discord.gg/mpHbuugjtK",
                         "_blank"
                       )
                     }}
